@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="images/x-icon" href="images/logo-kex.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <title>Kex By Lex</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+
+        <!--header-page-->
+        <header class="header">
+            <div class="logo">
+                <a href="index.html"><img src="Images/logo.png" alt=""></a>
+            </div>
+            <navbar>
+                <a href="index.html">Главная</a>
+                <a href="HTML/meniu.html">Меню</a>
+                <a href="HTML/galerie.html">Галерея</a>
+                <a href="HTML/contacte.html">Контакты</a>
+            </navbar>
+            <i id="hamburger" onclick="mobileMenu()" class="material-symbols-outlined">
+                menu
+            </i>
+
+
+        </header>
+        <!--header-page-->
+
+
+        <!--Dunumirea principala-->
+        <main id="index">
+            <div class="principala">
+                <div class='header-title'>
+                    KEX BY LEX
+                </div>
+                <div class='header-subtitle'>
+                    Место отдыха для всей семьи <br>
+
+                    <div class='header-bth'>
+                        <a href='#despre-noi' class='header-button'>УЗНАТЬ О КАФЕ</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </main>
+        <!--Denumirea principala-->
+
+        <!--Despre noi-->
+        <section id="despre-noi">
+            <div class="despre-noi-container">
+                <div class="despre-title">
+                    О нас
+                </div>
+                <div class="continut">
+                    <div class="despre-info">
+                        В 2017 году открылась одна из первых кофейнь в городе Вулканешты, которая порадовала
+                        местных жителей, а также туристов. В кафе «Kex by Lex» огромный ассортимент блюд таких как:
+                        поача,
+                        кексы, итальянская пицца, паста, бургеры, которые подарят прилив новых сил.
+                        По предпочтениям гостя профессиональный бариста сварит вкусный, ароматный кофе из
+                        натуральных высококачественных итальянских зерен, а лучшие
+                        повара приготовят изумительную выпечку к напитку
+                    </div>
+                    <div class="slider">
+
+                        <div class="slider__line">
+                            <img class="slider__img" src="Images/slider1.jpg">
+                            <img class="slider__img" src="Images/slider2.jpg">
+                            <img class="slider__img" src="Images/slider3.jpg">
+                        </div>
+                        <button class="slider__btn-next">
+                            <img src="Images/next.png">
+                        </button>
+                        <div class="slider__wrapper">
+                            <div class="slider__dot active-dot"></div>
+                            <div class="slider__dot"></div>
+                            <div class="slider__dot"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+    <!--Footer-->
+    <footer class="footer-down">
+        <div class="footer-item">
+            <a href="tel:+37362174017" class="footer-item-1"> <span class="material-symbols-outlined">
+                    phone_in_talk </span><span class="text"> 0-62-174-017 </span> </a>
+            <a href="index.html"><img src="Images/logo.png" alt="" class="footer-logo"></a>
+            <a href="https://goo.gl/maps/8pNuvoayHprPX7bQ7" class="footer-item-1" target="_blank"> <span
+                    class="material-symbols-outlined">
+                    map
+                </span>
+                <span class="text"> г. Вулканешты</span></a>
+        </div>
+        <marquee>Acest website a fost realizat în cadrul
+            competiției ”Tekwill Junior Ambassadors” organizată de proiectul ”Tekwill în Fiecare
+            Școală” și nu reflectă neapărat opinia proiectului.</marquee>
+    </footer>
+
+    <script src="JS/slider.js"></script>
+    <script src="JS/mobile.js"></script>
+</body>
+
+</html>
