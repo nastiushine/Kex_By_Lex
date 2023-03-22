@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="images/x-icon" href="../Images/logo-kex.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Kex By Lex - Меню</title>
+</head>
+
+<body>
+    <div class="upward" onClick="scrollTopTop()"></div>
+    <!--header-page-->
+    <header class="header">
+        <div class="logo">
+            <a href="../index.html"><img src="../Images/logo.png" alt=""></a>
+        </div>
+        <navbar>
+            <a href="../index.html">Главная</a>
+            <a href="../HTML/meniu.html">Меню</a>
+            <a href="../HTML/galerie.html">Галерея</a>
+            <a href="../HTML/contacte.html">Контакты</a>
+        </navbar>
+        <i id="hamburger" onclick="mobileMenu()" class="material-symbols-outlined">
+            menu
+        </i>
+    </header>
+    <!--header-page-->
+
+    <!--section-catalog-->
+    <section class="section section-catalog" id="main-section">
+        <div class="container">
+            <div><img class="menu" src="../Images/Group 1.jpg" alt=""></div>
+            <h1 class="section-title">Меню</h1>
+
+
+
+            <!--Catalog categorii-->
+            <div class="catalog-nav">
+                <ul class="catalog-nav-wrapper">
+                    <li class="catalog-nav-item">
+                        <button class="catalog-nav-btn is-active" type="button" data-filter="all">Все</button>
+                    </li>
+                    <li class="catalog-nav-item">
+                        <button class="catalog-nav-btn" type="button" data-filter="breakfast">Завтраки</button>
+                    </li>
+                    <li class="catalog-nav-item">
+                        <button class="catalog-nav-btn" type="button" data-filter="dinner">Обеды</button>
+                    </li>
+                    <li class="catalog-nav-item">
+                        <button class="catalog-nav-btn" type="button" data-filter="salads">Салаты</button>
+                    </li>
+                    <li class="catalog-nav-item">
+                        <button class="catalog-nav-btn" type="button" data-filter="fast-food">Фаст-Фуд</button>
+                    </li>
+                    <li class="catalog-nav-item">
+                        <button class="catalog-nav-btn" type="button" data-filter="pizza">Пицца</button>
+                    </li>
+                    <li class="catalog-nav-item">
+                        <button class="catalog-nav-btn" type="button" data-filter="paste">Паста</button>
+                    </li>
+                    <li class="catalog-nav-item">
+                        <button class="catalog-nav-btn" type="button" data-filter="bakery">Выпечка</button>
+                    </li>
+
+                </ul>
+            </div>
+            <!--Catalog categorii-->
+
+            <!--Catalog produse-->
+
+            <div class="catalog">
+
+                <div class="catalog-item" id="catalog-item-new" data-category="dinner">
+                    <div class="product"><img src="../meniu-img/борщ.jpg" alt="" class="product-img">
+                        <img src="../meniu-img/красный-борщ+.JPG" alt="" class="product-add">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Красный борщ</h3>
+                        <p class="product-description">с пампушками и сметаной</p>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">55 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="fast-food">
+                    <div class="product"><img src="../meniu-img/бургер.JPG" alt="" class="product-img">
+                        <video src="../meniu-img/бургер+.mp4" preload="auto" no-controls autoplay loop playsinline muted
+                            class="product-add"></video>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Бургер</h3>
+                        <p class="product-description">куриная грудка, грибы, сыр
+                        </p>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">75 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+
+                    </div>
+
+                </div>
+                <div class="catalog-item" data-category="bakery">
+                    <div class="product"><img src="../meniu-img/тирамису.JPG" alt="" class="product-img">
+                        <img src="../meniu-img/тирамису+.JPG" alt="" class="product-add">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Тирамису</h3>
+                        <p class="product-description"></p>
+                    </div>
+
+                    <div class="product-bottom">
+                        <span class="product-price-value">60 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="breakfast">
+                    <div class="product"><img src="../meniu-img/сладкие-блинчики.JPG" alt="" class="product-img">
+                        <img src="../meniu-img/сладкие-блинчики+.JPG" alt="" class="product-add">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Блины сладкие</h3>
+
+                        <p class="product-description">шоколад/ карамель/ заварной крем/ ягодный джем</p>
+                    </div>
+
+
+                    <div class="product-bottom">
+                        <span class="product-price-value">35 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+
+                </div>
+                <div class="catalog-item" data-category="pizza">
+                    <div class="product"><img src="../meniu-img/амстердам.JPG" alt="" class="product-img">
+                        <img src="../meniu-img/амстердам+.JPG" alt="" class="product-add">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Амстердам</h3>
+                        <p class="product-description">соус помодоро, тунец, моцарелла, оливки, перец</p>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">160 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+
+
+                <div class="catalog-item" data-category="breakfast">
+                    <div class="product"><img src="../meniu-img/яичница.JPG" alt="" class="product-img">
+                        <img src="../meniu-img/яичница+.JPG" alt="" class="product-add">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Яичница</h3>
+                        <p class="product-description">2 яйца, ветчина, помидоры черри, зелень </p>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">65 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="breakfast">
+                    <div class="product"><img src="../meniu-img/тосты.jpg" alt="" class="product-img"></div>
+                    <div class="product-content">
+                        <h3 class="product-title">тосты</h3>
+                        <p class="product-description">круассан, соус, лист салата, ветчина,сыр, огурец, помидор </p>
+                    </div>
+
+                    <div class="product-bottom">
+                        <span class="product-price-value">36 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="breakfast">
+                    <div class="product"><img src="../meniu-img/блины1.png" alt="" class="product-img"></div>
+                    <div class="product-content">
+                        <h3 class="product-title">Блины</h3>
+                        <p class="product-description">(куриная грудка, грибы, сыр, сливочный соус) </p>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">55 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="breakfast">
+                    <div class="product"><img src="../meniu-img/сэндвич.JPG" alt="" class="product-img">
+                        <img src="../meniu-img/сэндвич+.JPG" alt="" class="product-add">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Сэндвич</h3>
+                        <p class="product-description">круассан, соус, лист салата, ветчина,сыр, огурец, помидор </p>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">38 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="dinner">
+                    <div class="product"><img src="../meniu-img/зама.JPG" alt="" class="product-img">
+                        <img src="../meniu-img/зама+.JPG" alt="" class="product-add">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title"> Суп Зама</h3>
+                        <p class="product-description">суп с сухариками</p>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">55 lei</span>
+                        <span id="product-cart" class="product-cart" onclick="openPopup()"><span
+                                class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+
+
+                <div class="catalog-item" data-category="dinner">
+                    <div class="product"><img src="../meniu-img/мексиканский.JPG" alt="" class="product-img"></div>
+                    <div class="product-content">
+                        <h3 class="product-title">Мексиканский </h3>
+                        <p class="product-description">суп с сухариками</p>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">55 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+
+
+                <div class="catalog-item" data-category="dinner">
+                    <div class="product"><img src="../meniu-img/чечевичный.JPG" alt="" class="product-img"></div>
+                    <div class="product-content">
+                        <h3 class="product-title">Чечевичный</h3>
+                        <p class="product-description">суп с сухариками</p>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">45 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+
+
+
+                <div class="catalog-item" data-category="dinner">
+                    <div class="product"><img src="../meniu-img/пельмени.JPG" alt="" class="product-img"></div>
+                    <div class="product-content">
+                        <h3 class="product-title">Пельмени</h3>
+                        <p class="product-description">Куриные/Говяжьи</p>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">55/75</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+
+                <div class="catalog-item" data-category="salads">
+                    <div class="product"><img src="../meniu-img/цезарь-креветки.JPG" alt="" class="product-img">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Цезарь с креветками</h3>
+                        <p class="product-description"></p>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">95 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="salads">
+                    <div class="product"><img src="../meniu-img/цезарь-курица.JPG" alt="" class="product-img">
+
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Цезарь с курицей</h3>
+                        <p class="product-description">
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">135 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="salads">
+                    <div class="product"><img src="../meniu-img/тунец.jpg" alt="" class="product-img"></div>
+                    <div class="product-content">
+                        <h3 class="product-title">Салат с тунцом</h3>
+                        <p class="product-description"></p>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">95 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="salads">
+                    <div class="product"><img src="../meniu-img/греческий.jpg" alt="" class="product-img"></div>
+                    <div class="product-content">
+                        <h3 class="product-title">Салат Греческий</h3>
+                        <p class="product-description"> </p>
+                    </div>
+
+                    <div class="product-bottom">
+                        <span class="product-price-value">75 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="fast-food">
+                    <div class="product"><img src="../meniu-img/картошка-фри.jpg" alt="" class="product-img"></div>
+                    <div class="product-content">
+                        <h3 class="product-title">Картошка-фри</h3>
+                        <p class="product-description"></p>
+
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">42 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="fast-food">
+                    <div class="product"><img src="../meniu-img/картоф-шарики.png" alt="" class="product-img">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Картофельные-шарики</h3>
+                        <p class="product-description"></p>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">55 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="fast-food">
+                    <div class="product"><img src="../meniu-img/по-деревенски.jpg" alt="" class="product-img">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Картошка по-деревенски</h3>
+                        <p class="product-description"></p>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">55 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="fast-food">
+                    <div class="product"><img src="../meniu-img/фри-ассорти.JPG" alt="" class="product-img">
+                        <img src="../meniu-img/ассорти-фри+.JPG" alt="" class="product-add">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Ассорти-Фри</h3>
+                        <p class="product-description"></p>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">95 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="fast-food">
+                    <div class="product"><img src="../meniu-img/наггетцы.jpg" alt="" class="product-img"></div>
+                    <div class="product-content">
+                        <h3 class="product-title">Наггетсы</h3>
+                        <p class="product-description"></p>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">55 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+
+                <div class="catalog-item" data-category="pizza">
+                    <div class="product"><img src="../meniu-img/классическая.jpg" alt="" class="product-img">
+                        <video src="../meniu-img/классическая+ (1).mp4" preload="auto" no-controls autoplay loop
+                            playsinline muted class="product-add"></video>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Классическая</h3>
+                        <p class="product-description">соус помодоро, колбаса, сыр, помидоры, грибы, перец</p>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">125 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="pizza">
+                    <div class="product"><img src="../meniu-img/гавайская.JPG" alt="" class="product-img">
+                        <img src="../meniu-img/гавайская+.JPG" alt="" class="product-add">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Гавайская</h3>
+                        <p class="product-description">соус сливочный, куриная грудка, сыр, перец, кукуруза, ананасы
+                        </p>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">140 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="pizza">
+                    <div class="product"><img src="../meniu-img/4-сыра.JPG" alt="" class="product-img"></div>
+                    <div class="product-content">
+                        <h3 class="product-title">4 Сыра</h3>
+                        <p class="product-description">соус помодоро, моцарелла, эдамер, чеддер, пармезан
+                        </p>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">135 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+
+                <div class="catalog-item" data-category="pizza">
+                    <div class="product"><img src="../meniu-img/италия.JPG" alt="" class="product-img">
+                        <img src="../meniu-img/италия+.JPG" alt="" class="product-add">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Италия</h3>
+                        <p class="product-description">соус помодоро, моцарелла, ветчина, кукуруза, грибы, перец, спек
+                        </p>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">145 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="pizza">
+                    <div class="product"><img src="../meniu-img/Пеперони.JPG" alt="" class="product-img"></div>
+                    <div class="product-content">
+                        <h3 class="product-title">Пиперони</h3>
+                        <p class="product-description">соус помодоро, сыр, колбаса </p>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">125 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+
+                <div class="catalog-item" data-category="pizza">
+                    <div class="product"><img src="../meniu-img/маргаритта.JPG" alt="" class="product-img">
+                        <img src="../meniu-img/маргарита+.JPG" alt="" class="product-add">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Маргаритта</h3>
+                        <p class="product-description">соус сливочный,моцарелла, помидоры, базилик</p>
+                    </div>
+
+                    <div class="product-bottom">
+                        <span class="product-price-value">125 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="pizza">
+                    <div class="product"><img src="../meniu-img/олли.jpg" alt="" class="product-img"></div>
+                    <div class="product-content">
+                        <h3 class="product-title">Олли</h3>
+                        <p class="product-description">соус сливочный, ветчина, колбаса, кукуруза, перец</p>
+                    </div>
+
+                    <div class="product-bottom">
+                        <span class="product-price-value">135 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="pizza">
+                    <div class="product"><img src="../meniu-img/4мяса.jpg" alt="" class="product-img"></div>
+                    <div class="product-content">
+                        <h3 class="product-title">4 Мяса</h3>
+                        <p class="product-description">соус помодоро, сыр моцарелла, 4 вида мяса</p>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">175 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="paste">
+                    <div class="product"><img src="../meniu-img/фетучини-курица.JPG" alt="" class="product-img">
+                        <img src="../meniu-img/фетучини-курица+.JPG" alt="" class="product-add">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Фeттучини</h3>
+                        <p class="product-description">с курицей и грибами </p>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">135 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="paste">
+                    <div class="product"><img src="../meniu-img/фетучини-креветки.JPG" alt="" class="product-img">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Феттучини с креветками</h3>
+                        <p class="product-description"></p>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">165 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="paste">
+                    <div class="product"><img src="../meniu-img/фетучини-том.соус.JPG" alt="" class="product-img">
+                        <img src="../meniu-img/фетучини-том.паст+.JPG" alt="" class="product-add">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Феттучини с креветками </h3>
+                        <p class="product-description">в томатном соусе</p>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">165 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="paste">
+                    <div class="product"><img src="../meniu-img/паста-4сыра.JPG" alt="" class="product-img">
+                        <img src="../meniu-img/паста-4сыра+.JPG" alt="" class="product-add">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Паста 4 сыра </h3>
+                        <p class="product-description">моцарелла, чеддер, эдамер, пармезан</p>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">95 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+
+                <div class="catalog-item" data-category="paste">
+                    <div class="product"><img src="../meniu-img/фунчоза.JPG" alt="" class="product-img">
+                        <img src="../meniu-img/фунчоза+.JPG" alt="" class="product-add">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Фунчоза</h3>
+                        <p class="product-description">Рисовая лапша, кур. Грудка, грибы, перец, соевый соус, соус
+                            терияки</p>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">85 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="paste">
+                    <div class="product"><img src="../meniu-img/фунчоза-крев.JPG" alt="" class="product-img">
+                        <img src="../meniu-img/фунчоза+.JPG" alt="" class="product-add">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Фунчоза с креветками</h3>
+                        <p class="product-description">броколли, цветная капуста, перец, соус терияки </p>
+
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">135 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="breakfast">
+                    <div class="product"><img src="../meniu-img/блины.JPG" alt="" class="product-img">
+                        <img src="../meniu-img/панкейки+.JPG" alt="" class="product-add">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Панкейки</h3>
+                        <p class="product-description">3 панкейка</p>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">55 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="bakery">
+                    <div class="product"><img src="../meniu-img/кекс.JPG" alt="" class="product-img"></div>
+                    <div class="product-content">
+                        <h3 class="product-title">Кекс ванильный</h3>
+                        <p class="product-description"></p>
+
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">20 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="bakery">
+                    <div class="product"><img src="../meniu-img/кекс-шоколад.JPG" alt="" class="product-img"></div>
+                    <div class="product-content">
+                        <h3 class="product-title">Кекс шоколадный</h3>
+                        <p class="product-description"></p>
+
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">22 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="bakery">
+                    <div class="product"><img src="../meniu-img/пирог.jpg" alt="" class="product-img">
+                        <img src="../meniu-img/пирог+.jpg" alt="" class="product-add">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Пирог с вишней</h3>
+                        <p class="product-description"></p>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">32 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+
+                </div>
+                <div class="catalog-item" data-category="bakery">
+                    <div class="product"><img src="../meniu-img/чизкейк.JPG" alt="" class="product-img"></div>
+                    <div class="product-content">
+                        <h3 class="product-title">Чизкейк</h3>
+                        <p class="product-description"></p>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">35 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="bakery">
+                    <div class="product"><img src="../meniu-img/эклер.JPG" alt="" class="product-img">
+                        <img src="../meniu-img/эклер+.JPG" alt="" class="product-add">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Эклер</h3>
+                        <p class="product-description"></p>
+                    </div>
+
+                    <div class="product-bottom">
+                        <span class="product-price-value">23 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="bakery">
+                    <div class="product"><img src="../meniu-img/сырники.jpg" alt="" class="product-img"></div>
+                    <div class="product-content">
+                        <h3 class="product-title">Сырники</h3>
+                        <p class="product-description"></p>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">17 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="bakery">
+                    <div class="product"><img src="../meniu-img/вафли.JPG" alt="" class="product-img"></div>
+                    <div class="product-content">
+                        <h3 class="product-title">Вафли</h3>
+                        <p class="product-description"> Шоколад/ карамель/ заварной крем/ ягодный джем </p>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">15/22</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="bakery">
+                    <div class="product"><img src="../meniu-img/поча.JPG" alt="" class="product-img">
+                        <img src="../meniu-img/поча+.JPG" alt="" class="product-add">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Поча</h3>
+                        <p class="product-description"> с мясом / с творогом/ с творогом и зеленью</p>
+
+
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">15-18</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="bakery">
+                    <div class="product"><img src="../meniu-img/круасан.JPG" alt="" class="product-img">
+                        <img src="../meniu-img/круасан+.JPG" alt="" class="product-add">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Круассан</h3>
+                        <p class="product-description"> Шоколад/ карамель/ заварной крем/ ягодный джем </p>
+                    </div>
+                    <div class="product-bottom">
+                        <span class="product-price-value">25 lei</span>
+                        <span class="product-cart" onclick="openPopup()"><span class="material-symbols-outlined">
+                                add_shopping_cart
+                            </span></span>
+                    </div>
+                </div>
+
+            </div>
+            <!--Catalog produse-->
+        </div>
+        <div id="myPopup" class="popup">
+            <div class="popup-content">
+                <p class="popup-info">Для заказа звоните по номеру <a href="tel:+37362174017">062174017</a> или
+                    приходите по адресу Ленина 83, г. Вулканешты</p>
+                <button class="close" onclick="closePopup()">Закрыть</button>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer-down">
+        <div class="footer-item">
+            <a href="tel:+37362174017" class="footer-item-1"> <span class="material-symbols-outlined">
+                    phone_in_talk </span><span class="text"> 0-62-174-017 </span> </a>
+            <a href="../index.html"><img src="../Images/logo.png" alt="" class="footer-logo"></a>
+            <a href="https://goo.gl/maps/8pNuvoayHprPX7bQ7" class="footer-item-1" target="_blank"> <span
+                    class="material-symbols-outlined">
+                    map
+                </span>
+                <span class="text"> г. Вулканешты</span></a>
+        </div>
+        <marquee>Acest website a fost realizat în cadrul
+            competiției ”Tekwill Junior Ambassadors” organizată de proiectul ”Tekwill în Fiecare
+            Școală” și nu reflectă neapărat opinia proiectului.</marquee>
+    </footer>
+
+    <script src="../JS/filtru.js"></script>
+    <script src="../JS/mobile.js"></script>
+    <script src="../JS/scroll.js"></script>
+    <script src="../JS/popup.js"></script>
+</body>
+
+
+</html>
